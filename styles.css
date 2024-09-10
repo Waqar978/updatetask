@@ -1,0 +1,515 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header-container {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-container img.logo {
+    max-height: 40px;
+}
+
+.header-container nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.header-container nav ul li {
+    display: inline;
+}
+
+.header-container nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.cta-buttons button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.banner {
+    background-color: #007bff;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.banner-content h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.banner-content p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.freelance-projects {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.freelance-projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.project-card .company {
+    color: #555;
+    font-style: italic;
+}
+
+.project-card .price {
+    color: #28a745;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.project-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-card ul li {
+    margin: 5px 0;
+}
+
+.project-card button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .item {
+    flex: 1 1 200px; /* Grow to fill space, shrink as needed, and have a base width of 200px */
+    margin: 10px;
+  }
+/* For mobile devices */
+@media (max-width: 767px) {
+    .container {
+      flex-direction: column; /* Stack items vertically */
+    }
+  }
+  
+  /* For tablets */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+      flex-direction: row; /* Arrange items in a row */
+    }
+  }
+  
+  /* For laptops and desktops */
+  @media (min-width: 1025px) {
+    .container {
+      flex-direction: row;
+    }
+  }
+  .container {
+    width: 80%; /* 80% of the viewport width */
+    padding: 2em; /* Relative to the font size */
+  }
+  img, video {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  @media (max-width: 767px) {
+    .nav {
+      display: none; /* Hide on small screens */
+    }
+  
+    .hamburger {
+      display: block; /* Show hamburger menu */
+    }
+  }
+          
+/* Footer General Styling */
+footer {
+    background-color: #222;
+    color: #ddd;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    width: 18%;
+    margin-bottom: 20px;
+}
+
+.footer-section h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.footer-section .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    font-size: 18px;
+    color: #ddd;
+}
+
+.social-icon:hover {
+    color: #fff;
+}
+
+/* App Download Section */
+.app-download {
+    margin-top: 10px;
+}
+
+.app-download a img {
+    width: 120px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-section {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-section .social-icons {
+        justify-content: center;
+    }
+
+    .app-download {
+        text-align: center;
+    }
+}
+
+/* button */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px; /* Space between dropdowns */
+}
+
+.dropbtn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.dropbtn:hover {
+    background-color: #007bff;
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Job Section Styling */
+.job-section {
+    width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Job Carousel */
+.job-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+}
+
+.carousel-item {
+    text-align: center;
+    min-width: 150px;
+}
+
+.carousel-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.carousel-item p {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.carousel-item span {
+    font-size: 12px;
+    color: #555;
+}
+
+/* Job Categories Section */
+.job-categories {
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+}
+
+.tab-btn {
+    background-color: #e7e7e7;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tab-btn.active {
+    background-color: #0073e6;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    margin-top: 15px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.tab-content ul li {
+    margin: 5px 0;
+}
+
+.tab-content ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.tab-content ul li a:hover {
+    color: #0073e6;
+}
+
+/* Top Employers Section */
+.top-employers {
+    margin-top: 20px;
+}
+
+.employers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.employer-logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.employer-logo {
+    text-align: center;
+}
+
+/* media query */
+
+/* Default styles (for desktops and large screens) */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+ul {
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Media query for tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    body {
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    li {
+        font-size: 14px; /* Adjust font size for better readability */
+        padding: 8px;
+    }
+}
+
+/* Media query for mobile devices (up to 767px) */
+@media (max-width: 767px) {
+    body {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    li {
+        font-size: 13px; /* Further adjust font size for small screens */
+        padding: 6px;
+    }
+
+    /* Make links block elements to make clicking easier on small screens */
+    a {
+        display: block;
+        padding: 5px 0;
+    }
+}
+
+/* Media query for laptops (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    body {
+        padding: 18px;
+        font-size: 16px;
+    }
+
+    li {
+        font-size: 15px; /* Slightly smaller for medium screens */
+        padding: 9px;
+    }
+}
+
+/* Media query for desktops (1441px and up) */
+@media (min-width: 1441px) {
+    body {
+        padding: 20px;
+        font-size: 16px;
+    }
+}
